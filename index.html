@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculyator</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" class="display" id="display" value="0" disabled>
+        <div class="buttons">
+            <div class="button" onclick="clearDisplay()">C</div>
+            <div class="button" onclick="deleteLast()">←</div>
+            <div class="button" onclick="addOperator('/')">/</div>
+            <div class="button" onclick="addOperator('*')">x</div>
+            <div class="button" onclick="addDigit(7)">7</div>
+            <div class="button" onclick="addDigit(8)">8</div>
+            <div class="button" onclick="addDigit(9)">9</div>
+            <div class="button" onclick="addOperator('-')">-</div>
+            <div class="button" onclick="addDigit(4)">4</div>
+            <div class="button" onclick="addDigit(5)">5</div>
+            <div class="button" onclick="addDigit(6)">6</div>
+            <div class="button" onclick="addOperator('+')">+</div>
+            <div class="button" onclick="addDigit(1)">1</div>
+            <div class="button" onclick="addDigit(2)">2</div>
+            <div class="button" onclick="addDigit(3)">3</div>
+            <div class="button" id="equal" onclick="calculate()">=</div>
+            <div class="button" onclick="addDigit(0)">0</div>
+            <div class="button" onclick="addDecimal()">.</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
